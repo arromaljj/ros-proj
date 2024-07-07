@@ -1,0 +1,7 @@
+<launch>
+  <!-- Start Gazebo with a blank world -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch"/>
+
+  <!-- Run the custom node to move the robot -->
+  <node pkg="gazebo_example" type="move_robot.py" name="move_robot" output="screen"/>
+</launch>
